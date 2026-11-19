@@ -4,13 +4,15 @@ Unmodified copies of open-source libraries that the [Phantom](https://github.com
 
 ## What is here
 
-- The files are assets of a GitHub release, not files in this repository. Tag `jetbrains-hosted-1` has 39 libraries plus the 35 `-sources` jars that exist for them, 74 files. Each asset has its original file name.
+- The files are assets of GitHub releases, not files in this repository. Each asset has its original file name.
+  - Tag `jetbrains-hosted-1`: 39 libraries plus the 35 `-sources` jars that exist for them, 74 files.
+  - Tag `jetbrains-hosted-2`: 4 libraries plus their 4 `-sources` jars, 8 files: debugger-agent, debugger-memory-agent, rwmutex-idea, and TeamCity serviceMessages. All four are Apache-2.0 according to their source headers or upstream repositories.
 - [SOURCES.csv](SOURCES.csv) lists for every file its Maven coordinates, file name, sha256, original URL on `packages.jetbrains.team`, license (SPDX), and the upstream project.
 - [LICENSES/](LICENSES) has the full text of every license used: Apache-2.0, MIT, BSD-3-Clause, LGPL-2.1, LGPL-3.0 (with the GPL-3.0 it refers to), and GPL-2.0 with the Classpath exception. Copyright notices for each library are inside its jar and in its sources jar or upstream repository.
 
 The files are not changed in any way. This repository's own `LICENSE` (Apache-2.0) covers only the files written for this repository (README, SOURCES.csv). Each library keeps its own license.
 
-Only libraries with an open-source license are mirrored. Libraries that JetBrains declares as its own with no open-source license are not mirrored here.
+Only libraries with an open-source license are mirrored. Libraries with no open-source license are not mirrored here.
 
 ## How the files are verified
 
