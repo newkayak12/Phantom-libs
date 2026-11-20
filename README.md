@@ -26,7 +26,7 @@ Tag `phantom-patched-1` holds patched builds of mirrored libraries with known vu
 | org.eclipse.jgit 6.6.1 (jb-202510311356) | CVE-2025-4949 (XXE) | `ManifestParser` and `AmazonS3` parse XML with DOCTYPE and external entities disabled, as JGit 6.10.1 does. |
 | ini4j 0.5.5-2 | CVE-2022-41404 (DoS) | Variable substitution in `BasicProfile.fetch()` stops at a nesting depth of 32 and 1024 substitutions, instead of looping or overflowing the stack on a value that refers to itself. |
 
-This repository's own `LICENSE` (Apache-2.0) covers only the files written for this repository (README, SOURCES.csv, PATCHED.csv, patches/, sqlite-native/). Each library keeps its own license.
+This repository's own `LICENSE` (Apache-2.0) covers only the files written for this repository (README, SOURCES.csv, PATCHED.csv, patches/, sqlite-native/, brand/). Each library keeps its own license.
 
 Only libraries with an open-source license are mirrored. Libraries with no open-source license are not mirrored here.
 
@@ -44,3 +44,4 @@ Every file is pinned by sha256 in the Phantom tree (`lib/MODULE.bazel` and the o
 ## Built here
 
 - [sqlite-native/](sqlite-native): `libsqliteij` for the IntelliJ Platform's SQLite module, built from source in this repository with a current SQLite (tag `sqlite-native-3.54.1-phantom1`). JetBrains does not publish the JNI source of its own build.
+- [brand/](brand): the original Phantom artwork (`phantom-black.png`, `phantom-white.png`, `phantom-hood.png`) and `compose.swift`, which turns it into the app icon, the splash and the Windows installer images that the Phantom tree carries (usage in the script's header). The Phantom README shows `brand/phantom-black.png` from here. They were moved out of the Phantom tree (`community-resources/phantom-brand-src`) to keep it smaller.
