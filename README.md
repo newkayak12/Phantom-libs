@@ -38,3 +38,7 @@ Every file is pinned by sha256 in the Phantom tree (`lib/MODULE.bazel` and the o
 2. Create a new release tag (for example `jetbrains-hosted-2`). Upload the file under its original name, then download it from the release URL and check it again.
 3. Add a row to SOURCES.csv. If the license is new, add its text to LICENSES/.
 4. In Phantom, add the file name to the rewrite in `build/bazel_downloader.cfg`, as described in `docs/phantom/BUILD.md`.
+
+## Built here
+
+- [sqlite-native/](sqlite-native): `libsqliteij` for the IntelliJ Platform's SQLite module, built from source in this repository with a current SQLite (tag `sqlite-native-3.54.1-phantom1`). JetBrains does not publish the JNI source of its own build.
