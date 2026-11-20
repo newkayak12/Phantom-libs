@@ -7,6 +7,7 @@ Unmodified copies of open-source libraries that the [Phantom](https://github.com
 - The files are assets of GitHub releases, not files in this repository. Each asset has its original file name.
   - Tag `jetbrains-hosted-1`: 39 libraries plus the 35 `-sources` jars that exist for them, 74 files.
   - Tag `jetbrains-hosted-2`: 4 libraries plus their 4 `-sources` jars, 8 files: debugger-agent, debugger-memory-agent, rwmutex-idea, and TeamCity serviceMessages. All four are Apache-2.0 according to their source headers or upstream repositories.
+  - Tag `jetbrains-hosted-3`: JCEF 150.0.14 (Chromium 150.0.7871.129) jar and sources jar, 2 files. Phantom moved to it from JCEF 144 for Chromium security fixes.
 - [SOURCES.csv](SOURCES.csv) lists for every file its Maven coordinates, file name, sha256, original URL on `packages.jetbrains.team`, license (SPDX), and the upstream project.
 - [LICENSES/](LICENSES) has the full text of every license used: Apache-2.0, MIT, BSD-3-Clause, LGPL-2.1, LGPL-3.0 (with the GPL-3.0 it refers to), and GPL-2.0 with the Classpath exception. Copyright notices for each library are inside its jar and in its sources jar or upstream repository.
 
