@@ -11,7 +11,7 @@ Unmodified copies of open-source libraries that the [Phantom](https://github.com
 - [SOURCES.csv](SOURCES.csv) lists for every file its Maven coordinates, file name, sha256, original URL on `packages.jetbrains.team`, license (SPDX), and the upstream project.
 - [LICENSES/](LICENSES) has the full text of every license used: Apache-2.0, MIT, BSD-3-Clause, LGPL-2.1, LGPL-3.0 (with the GPL-3.0 it refers to), and GPL-2.0 with the Classpath exception. Copyright notices for each library are inside its jar and in its sources jar or upstream repository.
 
-The files of these two tags are not changed in any way.
+The files of the `jetbrains-hosted-<N>` tags are not changed in any way.
 
 ## Security patches
 
