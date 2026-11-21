@@ -1,6 +1,6 @@
 # phantom-libs
 
-Unmodified copies of open-source libraries that the [Phantom](https://github.com/newkayak12/Phantom) build ships and that only JetBrains hosts (`packages.jetbrains.team`, mostly JetBrains forks or repackagings). Phantom's Bazel build fetches them from here so that it does not depend on JetBrains hosting.
+Unmodified copies of open-source libraries that the [Phantom](https://github.com/newkayak12/Phantom) build ships or builds with and that only JetBrains hosts (`packages.jetbrains.team`, mostly JetBrains forks or repackagings). Phantom's Bazel build fetches them from here so that it does not depend on JetBrains hosting.
 
 ## What is here
 
@@ -8,8 +8,9 @@ Unmodified copies of open-source libraries that the [Phantom](https://github.com
   - Tag `jetbrains-hosted-1`: 39 libraries plus the 35 `-sources` jars that exist for them, 74 files.
   - Tag `jetbrains-hosted-2`: 4 libraries plus their 4 `-sources` jars, 8 files: debugger-agent, debugger-memory-agent, rwmutex-idea, and TeamCity serviceMessages. All four are Apache-2.0 according to their source headers or upstream repositories.
   - Tag `jetbrains-hosted-3`: JCEF 150.0.14 (Chromium 150.0.7871.129) jar and sources jar, 2 files. Phantom moved to it from JCEF 144 for Chromium security fixes.
+  - Tag `jetbrains-hosted-4`: 69 libraries the build compiles against or packs into the published Kotlin plugin, but the app does not ship, plus their 64 `-sources` jars, 133 files. Kotlin compiler, analysis and tooling jars (Apache-2.0), LanguageTool 6.8.27 core and languages (LGPL-2.1), Hunspell dictionaries (en: SCOWL, ru: BSD-3-Clause, de: GPL-2.0, uk: GPL-3.0; dictionary data only), and Apache-2.0 libraries (Netty snapshot, IntelliJ forks of kotlinx.coroutines and fastutil, jetCheck, package-search API models, kotlinx-document-store, maven-indexer RT, test-discovery, apple-notary client, json-schema-validator fork, Android Studio platform).
 - [SOURCES.csv](SOURCES.csv) lists for every file its Maven coordinates, file name, sha256, original URL on `packages.jetbrains.team`, license (SPDX), and the upstream project.
-- [LICENSES/](LICENSES) has the full text of every license used: Apache-2.0, MIT, BSD-3-Clause, LGPL-2.1, LGPL-3.0 (with the GPL-3.0 it refers to), and GPL-2.0 with the Classpath exception. Copyright notices for each library are inside its jar and in its sources jar or upstream repository.
+- [LICENSES/](LICENSES) has the full text of every license used: Apache-2.0, MIT, BSD-3-Clause, LGPL-2.1, LGPL-3.0 (with the GPL-3.0 it refers to), GPL-2.0 (also with the Classpath exception), and the SCOWL word-list license (`LicenseRef-SCOWL`, copied from the en dictionary jar). Copyright notices for each library are inside its jar and in its sources jar or upstream repository.
 
 The files of the `jetbrains-hosted-<N>` tags are not changed in any way.
 
